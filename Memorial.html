@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>In Loving Memory</title>
+
+<style>
+:root{
+  --bg:#0f172a;
+  --card:#020617;
+  --text:#e5e7eb;
+  --muted:#9ca3af;
+  --accent:#64748b;
+  --green:#02a95c;
+  --btn:#1e293b;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Segoe UI,Arial,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  display:flex;
+  justify-content:center;
+}
+
+.container{
+  width:100%;
+  max-width:760px;
+  padding:20px;
+}
+
+.card{
+  background:var(--card);
+  border-radius:14px;
+  padding:30px 20px;
+  margin-bottom:20px;
+  box-shadow:0 10px 40px rgba(0,0,0,.6);
+  text-align:center;
+}
+
+.photo{
+  width:160px;
+  height:160px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid var(--accent);
+}
+
+h1{margin:15px 0 5px}
+.dates{color:var(--muted);font-size:14px}
+
+.tribute{margin-top:18px;line-height:1.6;color:#d1d5db}
+.quote{margin-top:22px;padding-top:16px;border-top:1px solid #1e293b;font-style:italic;color:#cbd5f5}
+
+/* Funeral info */
+.info{text-align:left;max-width:520px;margin:0 auto}
+.info p{margin:10px 0;color:#d1d5db}
+.map-link,.live-link{color:#93c5fd;text-decoration:none}
+.map-link:hover,.live-link:hover{text-decoration:underline}
+
+/* Transparency */
+.list{text-align:left;max-width:500px;margin:15px auto}
+.list li{margin:8px 0}
+
+.progress-bar{background:#1e293b;border-radius:20px;overflow:hidden}
+.progress{height:14px;background:var(--green);width:0%}
+.progress-text{text-align:right;font-size:14px;margin-top:6px}
+
+/* Guestbook */
+input,textarea{
+  width:100%;
+  padding:10px;
+  margin-top:10px;
+  border-radius:6px;
+  border:1px solid #334155;
+  background:#020617;
+  color:white;
+}
+textarea{resize:none;height:80px}
+
+button{
+  margin-top:12px;
+  background:var(--green);
+  color:white;
+  border:none;
+  padding:12px;
+  width:100%;
+  border-radius:6px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.message{
+  text-align:left;
+  background:#020617;
+  padding:12px;
+  margin-top:10px;
+  border-left:4px solid var(--accent);
+  border-radius:6px;
+}
+.message small{color:var(--muted)}
+
+@media(max-width:480px){
+  .photo{width:120px;height:120px}
+  h1{font-size:22px}
+}
+
+/* Gallery */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fill,minmax(100px,1fr));
+  gap:10px;
+  margin-top:15px;
+}
+.gallery img{
+  width:100%;
+  height:100px;
+  object-fit:cover;
+  border-radius:6px;
+}
+
+/* Slideshow */
+.slideshow img{
+  width:100%;
+  max-height:320px;
+  object-fit:contain;
+  border-radius:10px;
+  margin-top:15px;
+}
+
+@media(max-width:480px){
+  .photo{width:120px;height:120px}
+  h1{font-size:22px}
+}
+
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<!-- 1️⃣ MEMORIAL HOME -->
+<div class="card">
+  <img src="https://github.com/cashmon22/Tracy-memorial-/blob/main/gallery1.PNG" class="photo">
+  <h1>Tracy Leopold</h1>
+  <div class="dates">1986 – 2025</div>
+  <div class="tribute">
+    Tracy Leopold was a loving soul whose kindness and compassion touched many lives.
+    Her memory will forever remain in our hearts.
+  </div>
+  <div class="quote">“Those we love never truly leave us.”</div>
+</div>
+
+<!-- 2️⃣ FUNERAL INFORMATION -->
+<div class="card">
+  <h2>Funeral Information</h2>
+  <div class="info">
+    <p><strong>Date & Time:</strong><br>Saturday, January 3, 2026 at 10:00 AM</p>
+    <p><strong>Location:</strong><br>
+      Oakland Cemetery<br>
+      248 Oakland Ave SE, Atlanta, GA 30312
+    </p>
+    <a class="map-link" target="_blank"
+       href="https://maps.apple.com/?address=248%20Oakland%20Ave%20SE,%20Atlanta,%20GA%20%2030312,%20United%20States&ll=33.748712,-84.373126&q=248%20Oakland%20Ave%20SE&t=m">
+       View on Google Maps
+    </a>
+    <p><strong>Dress Code / Instructions:</strong><br>
+      Guests are kindly requested to wear Black, dark gray, navy blue, or other muted/dark tones.
+    </p>
+    <p><strong>Livestream:</strong></p>
+    <a class="live-link" target="_blank" href="https://lovelymemorialtracy/livestream">
+      Watch Funeral Livestream
+    </a>
+  </div>
+</div>
+
+<!-- ORGANIZER INFORMATION -->
+<div class="card">
+  <h2>Organizer Information</h2>
+  <div class="info">
+    <p><strong>Name:</strong><br>Brenda Leopold</p>
+    <p><strong>Relationship:</strong><br>Sister of Tracy Leopold</p>
+    <p><strong>Contact:</strong><br>
+      📧 Brendaleopold221@gmail.com<br>
+      ☎️ +1
+    </p>
+  </div>
+</div>
+
+
+<!-- 3️⃣ PURPOSE & TRANSPARENCY -->
+<div class="card">
+  <h2>Purpose & Transparency</h2>
+  <p>All donations are used strictly for funeral, burial, and family support.</p>
+  <ul class="list">
+    <li>• Burial expenses</li>
+    <li>• Funeral service arrangements</li>
+    <li>• Immediate family support</li>
+  </ul>
+
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+  <div class="progress-text" id="progressText"></div>
+</div>
+
+<!-- 4️⃣ GOFUNDME DONATION -->
+<div class="card">
+  <h2>Support the Family</h2>
+  <input placeholder="Your name (optional)">
+  <textarea placeholder="Message / condolence (optional)"></textarea>
+  <button onclick="goToGFM()">Donate via GoFundMe</button>
+</div>
+
+
+<!-- 5️⃣ GUEST BOOK -->
+<div class="card">
+  <h2>Condolence Guest Book</h2>
+  <input id="gbName" placeholder="Your name">
+  <textarea id="gbMessage" placeholder="Your message / prayer / tribute"></textarea>
+  <button onclick="addMessage()">Post Message</button>
+</div>
+
+<div class="card">
+  <h2>Messages of Love & Remembrance</h2>
+  <div id="messages"></div>
+</div>
+
+</div>
+  
+  
+  
+  <script>
+/* =========================
+   PROGRESS BAR
+========================= */
+(function () {
+  const goal = 10000;
+  const raised = 4200;
+
+  const progressEl = document.getElementById("progress");
+  const progressTextEl = document.getElementById("progressText");
+
+  if (progressEl && progressTextEl) {
+    const percent = Math.min((raised / goal) * 100, 100);
+    progressEl.style.width = percent + "%";
+    progressTextEl.textContent =
+      `$${raised.toLocaleString()} raised of $${goal.toLocaleString()}`;
+  }
+})();
+
+/* =========================
+   GOFUNDME REDIRECT
+========================= */
+function goToGFM() {
+  window.location.href = "https://www.gofundme.com/f/honoring-tracy-leopolds-memory-with-love?lang=en_US&utm_campaign=man_ss_icons&utm_medium=customer&utm_source=copy_link&attribution_id=sl%3Adcb56c0f-a2f0-48aa-b853-7e77b241f301";
+}
+
+/* =========================
+   GUEST BOOK / MESSAGES
+========================= */
+const defaultMessages = [
+  {
+    name: "Sarah Mitchell",
+    text: "Tracy Leopold had a heart full of kindness and love. The pain of losing you is something words can’t explain. You will be missed forever.",
+    date: "Dec 29, 2025"
+  },
+  {
+    name: "Daniel Kingston",
+    text: "Tracy your absence has left a silence that hurts deeply. Gone too soon, but never forgotten.",
+    date: "Dec 29, 2025"
+  },
+  {
+    name: "Linda Harper",
+    text: "My sweet Tracy Leopold, heaven gained a beautiful soul. I will carry your memory with me for the rest of my life.",
+    date: "Dec 28, 2025"
+  },
+  {
+    name: "Michael Reynolds",
+    text: "Praying for Tracy Leopold and everyone who loved her. This loss is heartbreaking beyond words.",
+    date: "Dec 29, 2025"
+  },
+  {
+    name: "Grace Connor",
+    text: "Tracy Leopold, your memory lives on in every heart you touched. Rest peacefully, you are deeply loved.",
+    date: "Dec 28, 2025"
+  }
+];
+
+const messagesContainer = document.getElementById("messages");
+
+let messages = [];
+try {
+  const stored = JSON.parse(localStorage.getItem("guestMessages"));
+  messages = Array.isArray(stored) ? stored : defaultMessages;
+} catch {
+  messages = defaultMessages;
+}
+
+function renderMessages() {
+  if (!messagesContainer) return;
+
+  messagesContainer.innerHTML = "";
+  messages.forEach(msg => {
+    const div = document.createElement("div");
+    div.className = "message";
+    div.innerHTML = `
+      <strong>${msg.name}</strong><br>
+      ${msg.text}<br>
+      <small>${msg.date}</small>
+    `;
+    messagesContainer.appendChild(div);
+  });
+}
+
+function addMessage() {
+  const nameInput = document.getElementById("gbName");
+  const messageInput = document.getElementById("gbMessage");
+
+  if (!nameInput || !messageInput) return;
+
+  const name = nameInput.value.trim();
+  const text = messageInput.value.trim();
+
+  if (!name || !text) {
+    alert("Please enter your name and message.");
+    return;
+  }
+
+  const newMessage = {
+    name,
+    text,
+    date: new Date().toLocaleDateString()
+  };
+
+  messages.unshift(newMessage);
+  localStorage.setItem("guestMessages", JSON.stringify(messages));
+
+  nameInput.value = "";
+  messageInput.value = "";
+
+  renderMessages();
+}
+
+renderMessages();
+
+/* =========================
+   IMAGE GALLERY SLIDESHOW
+========================= */
+const galleryImages = [
+  "gallery1.jpg",
+  "gallery2.jpg",
+  "gallery3.jpg",
+  "gallery4.jpg"
+];
+
+let slideIndex = 0;
+const slideImg = document.getElementById("memorySlide");
+
+function nextMemory() {
+  if (!slideImg || galleryImages.length === 0) return;
+  slideIndex = (slideIndex + 1) % galleryImages.length;
+  slideImg.src = galleryImages[slideIndex];
+}
+
+// auto-play every 5 seconds
+if (slideImg) {
+  setInterval(nextMemory, 5000);
+}
+</script>
+  
+  </body>
+  </head>
+  
+  
+  
+  
+  
+
+
